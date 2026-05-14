@@ -76,3 +76,18 @@ button {
 button:hover {
     background-color: #555;
 }
+
+/* Gotiyon (Tokens) ka design */
+.token {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%; /* Isse box gol (circle) ban jayega */
+    border: 2px solid white;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.6);
+}
+
+.token-red { background-color: #cc0000; }
+.token-green { background-color: #009900; }
+.token-yellow { background-color: #e6b800; }
+.token-blue { background-color: #0066cc; }
+
