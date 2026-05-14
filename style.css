@@ -1,4 +1,4 @@
-body {
+hubody {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,3 +29,11 @@ h1 {
     width: 100%;
     height: 100%;
 }
+/* Gharon ke colors */
+.red { background-color: #ff4d4d; }
+.green { background-color: #4dff4d; }
+.yellow { background-color: #ffd633; }
+.blue { background-color: #4da6ff; }
+
+/* Beech ka center jahan goti paas hoti hai */
+.center-box { background-color: #555; }
