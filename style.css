@@ -37,3 +37,37 @@ h1 {
 
 /* Beech ka center jahan goti paas hoti hai */
 .center-box { background-color: #555; }
+/* Pase ka design */
+.dice-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.dice {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
