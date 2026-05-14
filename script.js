@@ -35,3 +35,18 @@ for (let i = 0; i < 225; i++) {
 
     board.appendChild(cell);
 }
+// Pase ko ghumane ka function
+function rollDice() {
+    // 1 se 6 ke beech random number nikalna
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+    
+    // HTML mein pase ke dabbe mein number dikhana
+    let diceBox = document.getElementById('dice-box');
+    diceBox.innerText = randomNumber;
+    
+    // Thoda animation jaisa feel dene ke liye color change
+    diceBox.style.backgroundColor = "#e0e0e0";
+    setTimeout(() => {
+        diceBox.style.backgroundColor = "white";
+    }, 200);
+}
