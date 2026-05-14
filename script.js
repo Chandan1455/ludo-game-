@@ -32,6 +32,33 @@ for (let i = 0; i < 225; i++) {
     else if (row === 1 && col === 8) { cell.classList.add('green'); }
     else if (row === 13 && col === 6) { cell.classList.add('blue'); }
     else if (row === 8 && col === 13) { cell.classList.add('yellow'); }
+    // --- GOTIYAN (TOKENS) RAKHNE KA LOGIC ---
+
+    // Red Gotiyan (Row 2,3 aur Col 2,3 mein)
+    if ((row === 2 || row === 3) && (col === 2 || col === 3)) {
+        let token = document.createElement('div');
+        token.classList.add('token', 'token-red');
+        cell.appendChild(token);
+    }
+    // Green Gotiyan (Row 2,3 aur Col 11,12 mein)
+    else if ((row === 2 || row === 3) && (col === 11 || col === 12)) {
+        let token = document.createElement('div');
+        token.classList.add('token', 'token-green');
+        cell.appendChild(token);
+    }
+    // Blue Gotiyan (Row 11,12 aur Col 2,3 mein)
+    else if ((row === 11 || row === 12) && (col === 2 || col === 3)) {
+        let token = document.createElement('div');
+        token.classList.add('token', 'token-blue');
+        cell.appendChild(token);
+    }
+    // Yellow Gotiyan (Row 11,12 aur Col 11,12 mein)
+    else if ((row === 11 || row === 12) && (col === 11 || col === 12)) {
+        let token = document.createElement('div');
+        token.classList.add('token', 'token-yellow');
+        cell.appendChild(token);
+    }
+
 
     board.appendChild(cell);
 }
